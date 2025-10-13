@@ -53,11 +53,11 @@ pip install -r requirements.txt
 
 4. **Prepare the knowledge base:**
 - Place your FAQ and process documents in the `data/` directory.
-- Run the knowledge vectorization script:
+- Run the knowledge parsing script:
 
-  ```
-  python vectorize_knowledge.py
-  ```
+```
+python parse-faq.py
+```
 
 5. **Run the Streamlit app:**
 ```
