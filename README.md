@@ -12,6 +12,14 @@ The agent is accessible through a simple web application built with Streamlit, a
 
 ---
 
+## 📚 Problem overview
+
+Marketplace sellers face a significant challenge due to the large number of processes, diverse documentation, and specific platform rules they must navigate. Marketplace platforms usually provide extensive and complex documentation, which can be overwhelming and difficult for sellers to understand or quickly find the exact information they need.
+
+This project addresses this problem by creating an intelligent assistant agent that helps sellers get concise and accurate answers simply by describing their needs in their own words. The agent relies on open-source Large Language Models (LLMs) and vector search over a structured knowledge base composed of FAQs and internal process documentation, making critical information easily accessible and user-friendly.
+
+---
+
 ## 🚀 Key Features
 
 - **Open-source LLM integration:** Utilizes Deepseek LLM to understand and process natural language queries from sellers.
@@ -27,15 +35,21 @@ The agent is accessible through a simple web application built with Streamlit, a
 Follow these steps to get the project up and running locally:
 
 1. **Clone the repository:**
-git clone https://github.com/yourusername/marketplace-seller-agent.git
-cd marketplace-seller-agent
+```
+git clone https://github.com/alexchugunoff/ozon-seller-agent.git
+cd ozon-seller-agent
+```
 
 2. **Create and activate a Python virtual environment:**
+```
 python -m venv venv
 source venv/bin/activate # On Windows: venv\Scripts\activate
+```
 
 3. **Install required dependencies:**
+```
 pip install -r requirements.txt
+```
 
 4. **Prepare the knowledge base:**
 - Place your FAQ and process documents in the `data/` directory.
@@ -46,9 +60,14 @@ pip install -r requirements.txt
   ```
 
 5. **Run the Streamlit app:**
+```
 streamlit run app.py
+```
 
-6. **Open your browser and go to:** `http://localhost:8501`
+6. **Open your browser and go to:** 
+```
+`http://localhost:8501`
+```
 
 ---
 
@@ -72,6 +91,7 @@ The agent provides a concise step-by-step guide referencing the relevant seller 
 ---
 
 ## 🛠️ Project Structure
+```
 marketplace-seller-agent/
 ├── data/ # FAQ and process documents for knowledge base
 ├── vectorize_knowledge.py # Script to create vector embeddings from data
@@ -79,6 +99,7 @@ marketplace-seller-agent/
 ├── requirements.txt # Python dependencies
 ├── README.md # Project documentation
 └── utils/ # Helper functions for vector search and LLM integration
+```
 
 ---
 
