@@ -74,6 +74,6 @@ for faq, file_id in faq_documents.items():
 
 #export to json
 with open('documents.json', 'wt') as f_out:
-    json.dump(documents, f_out, indent=2)
+    json.dump(documents, f_out, ensure_ascii=False, indent=2)
 
 print("Documents has parsed successfully")
