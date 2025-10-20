@@ -1,0 +1,6 @@
+docx==0.2.4
+minsearch==0.0.7
+openai==2.6.0
+python_docx==1.2.0
+Requests==2.32.5
+streamlit==1.50.0

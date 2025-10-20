@@ -50,23 +50,29 @@ source venv/bin/activate # On Windows: venv\Scripts\activate
 ```
 pip install -r requirements.txt
 ```
+As LLM we use Deepseek in this project. So that, you need to add your personal API-key to environmet (os.environ['DEEPSEEK'])
 
 4. **Prepare the knowledge base:**
-- Place your FAQ and process documents in the `data/` directory.
-- Run the knowledge parsing script:
+- Place your addition FAQ and process documents in the `data/` directory.
+- Or just run the knowledge parsing script:
 
 ```
 python parse-faq.py
 ```
 
 5. **Run the Streamlit app:**
+- manually:
 ```
 streamlit run app.py
+```
+- or using docker-compose:
+```
+docker-compose up --build
 ```
 
 6. **Open your browser and go to:** 
 ```
-`http://localhost:8501`
+http://localhost:8501
 ```
 
 ---
